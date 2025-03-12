@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  background-color: hsl(0, 100%, 74%, 0.97);
+  background-image: url("/src/images/bg-intro-mobile.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  overflow: hidden;
+  padding: 20px;
+  color: white;
+  font-family: "Poppins";
+  overflow-y: scroll;
+  min-width: 320px;
+}
+h2 {
+  margin-bottom: 20px;
+}
+p {
+  text-align: center;
+}
+
+span {
+  color: hsl(0, 100%, 50%, 0.5);
+  font-size: 0.9rem;
+}
+
+form {
+  background-color: white;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border-radius: 10px;
+  margin-bottom: 40px;
+  box-shadow: 0px 4px 5px rgba(255, 0, 0, 0.5);
+}
+
+input {
+  outline: none;
+  border: 1px solid hsl(0, 0%, 50%, 0.5);
+  padding: 15px;
+  border-radius: 10px;
+  font-family: "Poppins";
+  font-weight: bold;
+}
+
+input:invalid:not(:placeholder-shown) {
+  border: 1px solid red;
+  color: red;
+}
+
+input:valid {
+  border: 1px solid green;
+}
+
+form p {
+  color: hsl(0, 0%, 50%, 0.6);
+  font-size: 0.9rem;
+}
+button {
+  border: none;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: hsl(154, 59%, 51%);
+  color: white;
+  font-weight: bold;
+  font-family: "Poppins";
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: hsl(154, 76%, 68%);
+}
+
+.IntroSection {
+  text-align: center;
+  margin-top: 70px;
+}
+
+.Discount {
+  border: none;
+  background-color: hsl(248, 32%, 49%);
+  padding: 15px 50px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  margin-top: 50px;
+  box-shadow: 0px 4px 5px rgba(77, 9, 9, 0.5);
+}
+
+@media (min-width: 700px) {
+  .App {
+    display: flex;
+    background-image: url("/src/images/bg-intro-mobile.png");
+    gap: 25px;
+    padding-bottom: 40px;
+  }
+  h2 {
+    font-size: 2.5rem;
+  }
+  .IntroSection {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+  }
+  form p,
+  span {
+    font-size: 0.7rem;
+  }
+}
