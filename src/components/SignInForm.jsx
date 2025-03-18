@@ -9,7 +9,12 @@ function SignInForm() {
             <strong>Try it free 7 days </strong> then $20/mo. thereafter
           </p>
         </div>
-        <form action="submit">
+        <form
+          action="submit"
+          onSubmit={(e) => {
+            e.preventDefault();
+          }}
+        >
           {SignInData.map((item) => {
             return (
               <input
